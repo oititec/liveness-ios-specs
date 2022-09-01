@@ -13,6 +13,6 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks  = "Framework/FaceCaptcha.framework"
 
-  spec.dependency "Liveness3D-ios", "~> 2.0.0"
+  spec.dependency "Liveness3D-ios", "~> 3.0.0"
 
 end
