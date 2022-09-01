@@ -11,6 +11,8 @@ Pod::Spec.new do |spec|
   spec.source              = { :git => "https://github.com/oititec/liveness-ios-sdk.git", :tag => "#{spec.version}" }
   
 
-  spec.vendored_frameworks  = "Framework/FaceCaptcha.framework", "Framework/FaceTecSDK.xcframework"
+  spec.vendored_frameworks  = "Framework/FaceCaptcha.framework"
+
+  spec.dependency "Liveness3D-ios", "~> 2.0.0"
 
 end
