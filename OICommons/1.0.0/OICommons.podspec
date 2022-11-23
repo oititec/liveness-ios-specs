@@ -29,12 +29,20 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
   s.swift_version = "4.2"
   
-  s.source_files = 'OICommons/Classes/**/*'
+  s.default_subspecs = 'Release'
+   
+   s.subspec 'Debug' do |debug|
+        debug.source_files = 'OICommons/Classes/**/*.{swift, h, m}'
+   end
+   
+   s.subspec 'Release' do |release|
+      release.vendored_frameworks = 'Framework/OICommons.framework'
+   end
+
   
   s.resource_bundles = {
      'OICommons' => ['OICommons/Resources/**/*.{xcassets,otf}']
   }
-  
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
