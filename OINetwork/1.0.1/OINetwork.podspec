@@ -41,5 +41,5 @@ TODO: Add long description of the pod here.
   end
 
     
-   s.dependency 'OICommons', '~> 1.0.1'
+   s.dependency 'OICommons', '~> 1.0.2'
 end
