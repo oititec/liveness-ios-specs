@@ -44,7 +44,5 @@ TODO: Add long description of the pod here.
      'OICommons' => ['OICommons/Resources/**/*.{xcassets,otf}']
   }
   
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
 end

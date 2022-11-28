@@ -21,21 +21,25 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/oititec/ios-network'
+  s.homepage         = 'https://github.com/oiti/ios-network'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'GOK-IOS' => 'mmazzocco.solks@digio.com.br' }
+  s.author           = { 'GOK-IOS' => 'thiago.cavalcante@gok.digital' }
   s.source           = { :git => 'https://github.com/oititec/ios-network.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
   s.swift_version = "4.2"
-  
-  s.source_files = 'OINetwork/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'OINetwork' => ['OINetwork/Assets/*.png']
-  # }
+ 
+  s.default_subspecs = 'Release'
+     
+  s.subspec 'Debug' do |debug|
+      debug.source_files = 'OINetwork/Classes/**/*.{swift, h, m}'
+  end
+     
+  s.subspec 'Release' do |release|
+      release.vendored_frameworks = 'Framework/OINetwork.framework'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'OICommons', '~> 1.0.0'
+    
+   s.dependency 'OICommons', '~> 1.0.1'
 end
