@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'GOK-IOS' => 'thiago.cavalcante@gok.digital' }
-  s.source           = { :git => 'https://github.com/oiti/ios-network.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/oititec/ios-network.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
   s.swift_version = "4.2"
