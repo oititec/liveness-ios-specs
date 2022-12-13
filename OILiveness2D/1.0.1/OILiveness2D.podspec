@@ -40,6 +40,6 @@ TODO: Add long description of the pod here.
       release.vendored_frameworks = 'Framework/OILiveness2D.framework'
   end
 
-  s.dependency 'OICommons', '~> 1.0.5'
+  s.dependency 'OICommons', '~> 1.0.6'
   s.dependency 'OINetwork', '~> 1.0.3'
 end
